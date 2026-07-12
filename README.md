@@ -4,7 +4,8 @@ Marketing & support landing page for the [Altisenda](https://github.com/joseparr
 
 Served via **GitHub Pages** at:
 
-- https://joseparrams.github.io/altisenda-site/
+- https://altisenda.com (custom domain)
+- https://joseparrams.github.io/altisenda-site/ (default)
 
 Used as the **Support URL** and **Marketing URL** on App Store Connect.
 
