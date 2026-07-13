@@ -7,6 +7,28 @@
   <meta name="description" content="Altisenda is a distraction-free altitude, trail, and POI companion built for road trips, overlanding, and camping adventures." />
   <meta name="theme-color" content="#000000" />
 
+  <!--
+    Content Security Policy — restricts what the browser is allowed to load.
+    Delivered as a <meta> tag because GitHub Pages doesn't let us set HTTP
+    headers directly. Some directives (frame-ancestors, X-Frame-Options,
+    Permissions-Policy) can't be enforced via <meta> per spec — set those via
+    Cloudflare Transform Rules when the site is moved behind the proxy.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    font-src 'self';
+    connect-src 'self';
+    base-uri 'self';
+    form-action 'self';
+    object-src 'none';
+    upgrade-insecure-requests;
+  " />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="Altisenda — Altitude, Trails & POIs" />
   <meta property="og:description" content="Real-time altitude, one-tap POI saving, GPS track recording. Free, private, no account needed." />
