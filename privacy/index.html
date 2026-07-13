@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Altisenda</title>
+  <meta name="description" content="Altisenda's Privacy Policy — no accounts, no tracking, your locations stay on your device." />
+  <meta name="theme-color" content="#000000" />
+
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    font-src 'self';
+    connect-src 'self';
+    base-uri 'self';
+    form-action 'self';
+    object-src 'none';
+    upgrade-insecure-requests;
+  " />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+  <link rel="icon" type="image/png" href="../icon.png" />
+
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #f5f5f5;
+      --muted: #a3a3a3;
+      --accent: #22c55e;
+      --card: #0f0f0f;
+      --border: #1f1f1f;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+    header { padding: 48px 0 24px; text-align: center; }
+    header h1 {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    header .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main { padding: 24px 0 48px; }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 40px 0 12px;
+      color: var(--fg);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    p { margin: 0 0 14px; color: #d4d4d4; }
+    ul { margin: 0 0 14px; padding-left: 22px; color: #d4d4d4; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--fg); }
+
+    .callout {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .callout p:last-child { margin-bottom: 0; }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      margin-top: 48px;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <a href="/" class="back">← altisenda.com</a>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">How Altisenda handles your data — the short and honest version.</p>
+      <p class="meta">Effective date: July 12, 2026</p>
+    </header>
+
+    <main>
+
+      <div class="callout">
+        <p><strong>Summary.</strong> Altisenda has no user accounts, no ads, no third-party trackers, and no analytics unless you opt in. Everything you save — your Points of Interest, tracks, and settings — stays on your device.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>Altisenda ("the app", "we", "our", "us") is a free iOS application published by Jose Parra. Contact us at <a href="mailto:support@altisenda.com">support@altisenda.com</a>.</p>
+
+      <h2>2. What stays on your device</h2>
+      <p>All of the following is stored <strong>locally</strong> on your iPhone using Apple's SwiftData / iOS filesystem and never leaves the device through Altisenda:</p>
+      <ul>
+        <li>Points of Interest (name, coordinates, address, description, timestamp).</li>
+        <li>Recorded tracks (GPS breadcrumb points, altitude samples, duration, distance).</li>
+        <li>App settings (units, theme, refresh rate).</li>
+      </ul>
+      <p>You can delete this data at any time from within the app.</p>
+
+      <h2>3. Location data</h2>
+      <p>Altisenda requests access to your device's location <strong>while the app is in use</strong>, and — when you tap Start on the Altitude tab — <strong>in the background</strong> so tracking continues while the screen is off.</p>
+      <p>Location data is used to:</p>
+      <ul>
+        <li>Display your current altitude.</li>
+        <li>Attach coordinates to Points of Interest you save.</li>
+        <li>Record GPS breadcrumb trails for tracks.</li>
+      </ul>
+      <p>Location data is <strong>not transmitted to Altisenda's servers</strong>. Altisenda does not operate any servers that receive your location.</p>
+
+      <h2>4. Third-party services we rely on</h2>
+      <p>Altisenda uses a few Apple system services and one optional analytics service:</p>
+
+      <h3>Apple Maps &amp; MapKit</h3>
+      <p>To render map tiles, satellite imagery, and to reverse-geocode coordinates into human-readable place names and addresses, Altisenda uses Apple's MapKit / CLGeocoder APIs. When these are used, iOS sends the necessary coordinates to Apple. Apple's handling of that data is governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
+
+      <h3>Apple Speech Recognition</h3>
+      <p>When you use Apple's system dictation to enter text into a POI or track description, iOS may send audio to Apple's servers for transcription. This is governed by Apple's Privacy Policy and can be disabled at the iOS level.</p>
+
+      <h3>Siri &amp; Shortcuts</h3>
+      <p>Altisenda exposes App Intents (for example, "Save Location") that let Siri and the Shortcuts app trigger actions in the app. Voice recognition is handled entirely by Apple.</p>
+
+      <h3>Microsoft Azure Application Insights (optional, opt-in)</h3>
+      <p>If — and only if — you enable <strong>"Share usage data"</strong> in Settings, Altisenda sends anonymous usage diagnostics to Microsoft Azure Application Insights so we can understand which features are used, debug crashes, and improve the app.</p>
+      <p>When enabled, we send:</p>
+      <ul>
+        <li>Screen names visited (e.g. "Altitude", "Trail").</li>
+        <li>Feature-tap events (e.g. "poi_created", "track_started", "theme_changed").</li>
+        <li>Error and crash reports (error name, domain, code, and a short message).</li>
+        <li>App version, build number, iOS version, device model.</li>
+        <li>A random, per-install identifier (a UUID generated on your device) used only to correlate events from the same installation.</li>
+        <li>Free-text feedback you submit through the in-app Feedback form.</li>
+      </ul>
+      <p>When enabled, we <strong>do not</strong> send:</p>
+      <ul>
+        <li>Any location coordinates, addresses, POI names, or track data.</li>
+        <li>Your name, email, phone number, contacts, or any device identifier that would identify you personally (no IDFA, IDFV, or Apple ID).</li>
+        <li>Precise timestamps of when specific tracks or POIs were created.</li>
+      </ul>
+      <p>You can turn telemetry off at any time in <strong>Settings → Privacy → Share usage data</strong>. Tapping <strong>"Delete telemetry &amp; reset ID"</strong> clears the local queue and signals our backend to purge events associated with your install identifier.</p>
+      <p>Microsoft's handling of the data we send is governed by the <a href="https://privacy.microsoft.com/privacystatement" rel="noopener">Microsoft Privacy Statement</a>.</p>
+
+      <h2>5. Sharing your data</h2>
+      <p>You can, at your discretion, share:</p>
+      <ul>
+        <li>A saved place by opening it in <strong>Apple Maps</strong> or <strong>Google Maps</strong>, or by copying its coordinates.</li>
+        <li>A recorded track as a <strong>GPX file</strong> via the iOS Share Sheet (email, AirDrop, Files, etc.).</li>
+      </ul>
+      <p>These share actions are initiated by you and are handled by the receiving app or service — Altisenda does not intercept, log, or transmit their content.</p>
+
+      <h2>6. Children's privacy</h2>
+      <p>Altisenda is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us information through the optional feedback form, please contact us and we will delete it.</p>
+
+      <h2>7. Data retention &amp; deletion</h2>
+      <p><strong>Local data</strong> (POIs, tracks, settings) is retained until you delete it from within the app or uninstall Altisenda.</p>
+      <p><strong>Opt-in telemetry</strong> is retained for up to 90 days on Microsoft Azure Application Insights, then automatically purged. Feedback events are retained for up to 12 months. You can request earlier deletion by emailing <a href="mailto:support@altisenda.com">support@altisenda.com</a> with the <em>Install ID</em> shown in Settings.</p>
+
+      <h2>8. Your rights</h2>
+      <p>Depending on your jurisdiction (for example, the EU under GDPR or California under CCPA/CPRA), you may have the right to access, correct, or delete personal information we hold about you, and to object to or restrict processing. To exercise these rights, email <a href="mailto:support@altisenda.com">support@altisenda.com</a>. Because Altisenda does not require or collect identifying information, we may only be able to fulfil requests tied to your <em>Install ID</em>.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this policy from time to time. Material changes will be reflected in the "Effective date" above and, where appropriate, surfaced in-app.</p>
+
+      <h2>10. Contact</h2>
+      <p>Questions or requests? Email <a href="mailto:support@altisenda.com">support@altisenda.com</a>.</p>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Altisenda · <a href="/">altisenda.com</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
